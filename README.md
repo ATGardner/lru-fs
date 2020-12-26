@@ -15,11 +15,11 @@ await cache.init(); // reads all current files in the cache folder
                     // and puts them in the cache while using their birthtime
                     // to decide if they should already be evicted
 
-const added = await cache.set("key", "some very long key you want to keep as a file, instead of all in-memory");
+const added = await cache.set("key", "some very long text/data you want to keep as a file, instead of all in-memory");
 // returns true if item was added. false if it is too big for the cache
 
 const value = await cache.get("key");
-// "some very long key you want to keep as a file, instead of all in-memory"
+// "some very long text/data you want to keep as a file, instead of all in-memory"
 
 await cache.reset()    // emptys the cache and deletes all the local files
 ```
