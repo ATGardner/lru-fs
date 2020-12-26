@@ -31,3 +31,4 @@ The `length` and `dispose` options from LRU-CACHE are ignored.
 * `rootFolder` path to file system location where the cache should keep all files, defaults to '.'
 * ~~`length`~~ the length option from LRU-CACHE was removed, in order to automatically calculate the length of all files in the cache
 * ~~`dispose`~~ the dispose option from LRU-CACHE was removed, in order to delete the files from the file system, once an item is being evicted from the cache
+* any other option from [lru-cache](https://www.npmjs.com/package/lru-cache#options)
